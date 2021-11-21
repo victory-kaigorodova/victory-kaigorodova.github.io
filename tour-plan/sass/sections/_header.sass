@@ -1,0 +1,67 @@
+.header 
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 40px 0
+        background-color: $color-white
+        &-inner
+            background-color: $color-white
+        &__menu-btn
+            display: none
+    &-menu
+        color: $color-white
+        padding: 31px 0
+        text-transform: uppercase
+        display: flex
+        justify-content: space-between
+        background-color: $color-dark
+        &-inner
+            background-color: $color-dark
+    .logo
+        width: 177px
+        &-image
+            width: 100%
+.search
+    display: flex
+    position: relative
+    overflow: hidden
+    border-radius: 6px
+    &__input
+        width: 350px
+        height: 40px
+        padding-left: 23px 
+        padding-right: 23px + 65px
+        background-color: $color-back
+        border: none
+        font-size: 12px
+        line-height: 15px
+    &__button
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        width: 65px
+.user
+    display: flex
+    align-items: center
+    &__avatar
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        object-fit: cover
+    &__name
+        margin-left: 18px
+        font-size: 14px
+        line-height: 18px
+.menu-btn
+    height: 11px
+    cursor: pointer
+    &__line
+        width: 16px
+        height: 1px
+        background-color: $color-black
+.search, .user
+    &--mobile
+        &--visible
+            display: none
