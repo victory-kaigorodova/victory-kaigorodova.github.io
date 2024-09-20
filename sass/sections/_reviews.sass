@@ -1,0 +1,74 @@
+.reviews
+    padding: 40px 0 70px 0
+    &-title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &-swiper
+        width: 100%
+        height: 300px
+        position: relative
+        &__button
+            position: absolute
+            width: 60px
+            height: 60px
+            top: 0
+            z-index: 99
+            background-color: transparent
+            border: none
+            &--prev
+            &--next
+                right: 0
+        &__item
+            background-color: $color-white
+            border-radius: 8px
+            position: relative
+            max-width: 730px
+            padding: 136px 95px 30px 95px
+            margin: auto
+            &::after
+                content: ''
+                width: 70px
+                height: 50px
+                background-image: url('../img/quote-right.svg')
+                background-repeat: no-repeat
+                position: absolute
+                top: 120px
+                right: 64px
+                z-index: 99
+            &::before
+                content: ''
+                width: 70px
+                height: 50px
+                background-image: url('../img/quote-left.svg')
+                background-repeat: no-repeat
+                position: absolute
+                top: 13px
+                left: 64px
+                z-index: 89
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            height: 150px
+            top: -45px
+            right: 50%
+            transform: translateX(50%)
+            position: absolute
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+        &__name
+            margin-top: 15px
+            color: $color-actient
+        &__date
+            font-size: 10px
+            line-height: 13px
+        &__text
+            text-align: justify
